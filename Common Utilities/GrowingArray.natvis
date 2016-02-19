@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<Type Name="CommonUtilities::GrowingArray&lt;*&gt;">
+    <DisplayString>{{ CurrentSize={myCurrentSize} }}</DisplayString>
+    <Expand>
+        <Item Name="[CurrentSize]">myCurrentSize</Item>
+        <Item Name="[MaxSize]">myMaxSize</Item>
+        <ArrayItems>
+            <Size>myCurrentSize</Size>
+            <ValuePointer>myArray</ValuePointer>
+        </ArrayItems>
+    </Expand>
+</Type>
+
+</AutoVisualizer>

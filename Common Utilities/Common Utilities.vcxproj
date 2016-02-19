@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug NSIGHT|Win32">
+      <Configuration>Debug NSIGHT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Private Debug|Win32">
+      <Configuration>Private Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Private Release|Win32">
+      <Configuration>Private Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release NSIGHT|Win32">
+      <Configuration>Release NSIGHT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SingleThreaded Debug|Win32">
+      <Configuration>SingleThreaded Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SingleThreaded Release|Win32">
+      <Configuration>SingleThreaded Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Workbed Release|Win32">
+      <Configuration>Workbed Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50287E58-8BD0-437D-9803-77B3D5D0C8AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CommonUtilities</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Advapi32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AttachObserverData.h" />
+    <ClInclude Include="AutoPointer.h" />
+    <ClInclude Include="BaseObjectPool.h" />
+    <ClInclude Include="BinaryFunctions.h" />
+    <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="Buffer.h" />
+    <ClInclude Include="CharInput.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="ColliderCircle.h" />
+    <ClInclude Include="CollisionStructs.h" />
+    <ClInclude Include="CommonUtilities.h" />
+    <ClInclude Include="ControllerButton.h" />
+    <ClInclude Include="CUString.h" />
+    <ClInclude Include="DebugLines.h" />
+    <ClInclude Include="DetachObserverData.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="DL_Assert.h" />
+    <ClInclude Include="DL_Debug.h" />
+    <ClInclude Include="DL_StackWalker.h" />
+    <ClInclude Include="EnumDictionary.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventBuffer.h" />
+    <ClInclude Include="EventEnums.h" />
+    <ClInclude Include="EventFunctions.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="EventPrio.h" />
+    <ClInclude Include="DataFile.h" />
+    <ClInclude Include="file_watcher.h" />
+    <ClInclude Include="Flag.h" />
+    <ClInclude Include="GraphicsEnums.h" />
+    <ClInclude Include="Greater.h" />
+    <ClInclude Include="GrowingArray.h" />
+    <ClInclude Include="Lerp.h" />
+    <ClInclude Include="MemoryStackWalker.h" />
+    <ClInclude Include="MemoryWrapper.h" />
+    <ClInclude Include="RayStruct.h" />
+    <ClInclude Include="SceneRenderCommands.h" />
+    <ClInclude Include="SharedPointer.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateStack.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="Heap.h" />
+    <ClInclude Include="ID.h" />
+    <ClInclude Include="IDFactory.h" />
+    <ClInclude Include="InputWrapper.h" />
+    <ClInclude Include="EnumKeys.h" />
+    <ClInclude Include="Intersection.h" />
+    <ClInclude Include="ittnotify.h" />
+    <ClInclude Include="KeyboardEvent.h" />
+    <ClInclude Include="KeyboardEventLog.h" />
+    <ClInclude Include="Lesser.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="LineVolume.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Matrix33.h" />
+    <ClInclude Include="Matrix33decl.h" />
+    <ClInclude Include="Matrix44.h" />
+    <ClInclude Include="Matrix44decl.h" />
+    <ClInclude Include="MemoryBucket.h" />
+    <ClInclude Include="MemoryChunk.h" />
+    <ClInclude Include="MemoryChunkLesser.h" />
+    <ClInclude Include="MouseAxisLog.h" />
+    <ClInclude Include="MouseEvent.h" />
+    <ClInclude Include="MouseEventLog.h" />
+    <ClInclude Include="MurmurHash3.h" />
+    <ClInclude Include="ObjectPoolData.h" />
+    <ClInclude Include="ObserverPrio.h" />
+    <ClInclude Include="PoolPointer.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="ObserverEvent.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PlaneVolume.h" />
+    <ClInclude Include="RandomNumberGenerator.h" />
+    <ClInclude Include="RenderBuffer.h" />
+    <ClInclude Include="RenderCommandFont.h" />
+    <ClInclude Include="RenderCommandInstance.h" />
+    <ClInclude Include="RenderCommandLine.h" />
+    <ClInclude Include="RenderCommandSprite.h" />
+    <ClInclude Include="ResourceUsage.h" />
+    <ClInclude Include="SingleControllerLog.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackWalker.h" />
+    <ClInclude Include="StaticArray.h" />
+    <ClInclude Include="Common Utilities_Precompiled.h" />
+    <ClInclude Include="AnalogueLog.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextureRect.h" />
+    <ClInclude Include="ThreadEventData.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="CU_Time.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TimerManager.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="TreeNode.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector2decl.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector3decl.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="Vector4decl.h" />
+    <ClInclude Include="VectorOnStack.h" />
+    <ClInclude Include="VersionStruct.h" />
+    <ClInclude Include="VTuneAPI.h" />
+    <ClInclude Include="Work.h" />
+    <ClInclude Include="Worker.h" />
+    <ClInclude Include="XboxController.h" />
+    <ClInclude Include="XboxControllerState.h" />
+    <ClInclude Include="XMLReader.h" />
+    <ClInclude Include="XMLWrapper.h" />
+    <ClInclude Include="XMLWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CharInput.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="ColliderCircle.cpp" />
+    <ClCompile Include="DebugLines.cpp" />
+    <ClCompile Include="DL_Debug.cpp" />
+    <ClCompile Include="DL_StackWalker.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventBuffer.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="DataFile.cpp" />
+    <ClCompile Include="file_watcher.cpp" />
+    <ClCompile Include="ID.cpp" />
+    <ClCompile Include="IDFactory.cpp" />
+    <ClCompile Include="InputWrapper.cpp" />
+    <ClCompile Include="Intersection.cpp" />
+    <ClCompile Include="KeyboardEventLog.cpp" />
+    <ClCompile Include="MemoryStackWalker.cpp" />
+    <ClCompile Include="MemoryWrapper.cpp" />
+    <ClCompile Include="MouseEventLog.cpp" />
+    <ClCompile Include="MurmurHash3.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="RenderBuffer.cpp" />
+    <ClCompile Include="RenderCommandFont.cpp" />
+    <ClCompile Include="RenderCommandInstance.cpp" />
+    <ClCompile Include="RenderCommandLine.cpp" />
+    <ClCompile Include="SceneRenderCommands.cpp" />
+    <ClCompile Include="RenderCommandSprite.cpp" />
+    <ClCompile Include="ResourceUsage.cpp" />
+    <ClCompile Include="SingleControllerLog.cpp" />
+    <ClCompile Include="StackWalker.cpp" />
+    <ClCompile Include="Common Utilities_Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Create</PrecompiledHeader>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="AnalogueLog.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateStack.cpp" />
+    <ClCompile Include="ThreadEventData.cpp" />
+    <ClCompile Include="ThreadPool.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">SINGLE_THREADED;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">SINGLE_THREADED;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="CU_Time.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TimerManager.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="VersionStruct.cpp" />
+    <ClCompile Include="Work.cpp" />
+    <ClCompile Include="Worker.cpp" />
+    <ClCompile Include="XboxController.cpp" />
+    <ClCompile Include="XboxControllerState.cpp" />
+    <ClCompile Include="XMLReader.cpp" />
+    <ClCompile Include="XMLWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GrowingArray.natvis">
+      <FileType>Document</FileType>
+    </Xml>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

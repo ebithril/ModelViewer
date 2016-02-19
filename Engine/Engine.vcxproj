@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug NSIGHT|Win32">
+      <Configuration>Debug NSIGHT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Private Debug|Win32">
+      <Configuration>Private Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Private Release|Win32">
+      <Configuration>Private Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release NSIGHT|Win32">
+      <Configuration>Release NSIGHT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SingleThreaded Debug|Win32">
+      <Configuration>SingleThreaded Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SingleThreaded Release|Win32">
+      <Configuration>SingleThreaded Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Workbed Release|Win32">
+      <Configuration>Workbed Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{053FB538-46B3-4E66-8D60-6ECC1559B559}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">
+    <OutDir>$(SolutionDir)\VSOutput\Libraries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\VSOutput\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NSIGHT;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NSIGHT;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PrecompiledHeaderFile>$(ProjectName)_Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)VSOutput\$(ProjectName)_$(Configuration)\$(ProjectName)_PrecompiledOutput.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ObjectFileOutput>$(SolutionDir)..\..\Workbed\Data\Shaders\%(Filename).fso</ObjectFileOutput>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationContainer.h" />
+    <ClInclude Include="AnimationCurve.h" />
+    <ClInclude Include="AnimationDefines.h" />
+    <ClInclude Include="AnimationInstance.h" />
+    <ClInclude Include="AnimationNode.h" />
+    <ClInclude Include="AnimationStack.h" />
+    <ClInclude Include="BloomManager.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="COMObjectPointer.h" />
+    <ClInclude Include="ConstantBuffers.h" />
+    <ClInclude Include="CubeMapGenerator.h" />
+    <ClInclude Include="CurveAnimationFrame.h" />
+    <ClInclude Include="d3dx11effect.h" />
+    <ClInclude Include="DDSTextureLoader.h" />
+    <ClInclude Include="DirectX2D.h" />
+    <ClInclude Include="DirectXEngine.h" />
+    <ClInclude Include="DispatchHelper.h" />
+    <ClInclude Include="DynamicVertexBufferWrapper.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EffectFactory.h" />
+    <ClInclude Include="EngineEvents.h" />
+    <ClInclude Include="FontCommon.h" />
+    <ClInclude Include="OrthographicFrustum.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="EmitterData.h" />
+    <ClInclude Include="EmitterFactory.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Engine_Precompiled.h" />
+    <ClInclude Include="FaderHelper.h" />
+    <ClInclude Include="FBXFactory.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="FullScreenHelper.h" />
+    <ClInclude Include="GfxFactoryWrapper.h" />
+    <ClInclude Include="HDRManager.h" />
+    <ClInclude Include="HierarchyBone.h" />
+    <ClInclude Include="Instance.h" />
+    <ClInclude Include="KeyFrame.h" />
+    <ClInclude Include="LightBuffer.h" />
+    <ClInclude Include="LightShaderData.h" />
+    <ClInclude Include="LineRenderer.h" />
+    <ClInclude Include="MotionBlurManager.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleData.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="ParticleSystemData.h" />
+    <ClInclude Include="ParticleSystemFactory.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderTargetData.h" />
+    <ClInclude Include="ResourceFontCollectionLoader.h" />
+    <ClInclude Include="ResourceFontFileEnumerator.h" />
+    <ClInclude Include="ResourceFontFileLoader.h" />
+    <ClInclude Include="ResourceFontFileStream.h" />
+    <ClInclude Include="SceneRenderData.h" />
+    <ClInclude Include="ModelDataStruct.h" />
+    <ClInclude Include="IndexBufferWrapper.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelFactory.h" />
+    <ClInclude Include="SetupInfo.h" />
+    <ClInclude Include="ShadowBuffer.h" />
+    <ClInclude Include="ShadowManager.h" />
+    <ClInclude Include="ShadowRenderData.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteFactory.h" />
+    <ClInclude Include="Streak.h" />
+    <ClInclude Include="StreakData.h" />
+    <ClInclude Include="StreakEmitter.h" />
+    <ClInclude Include="StreakEmitterData.h" />
+    <ClInclude Include="StreakFactory.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TerrainInstance.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureFactory.h" />
+    <ClInclude Include="TextureMerger.h" />
+    <ClInclude Include="TextureType.h" />
+    <ClInclude Include="TransformationNode.h" />
+    <ClInclude Include="TransformationNodeCurves.h" />
+    <ClInclude Include="TransformationNodeHierarchy.h" />
+    <ClInclude Include="TransformationNodeInstance.h" />
+    <ClInclude Include="VertexBufferWrapper.h" />
+    <ClInclude Include="VertexDataWrapper.h" />
+    <ClInclude Include="VertexIndexWrapper.h" />
+    <ClInclude Include="Video.h" />
+    <ClInclude Include="WindowsFunctions.h" />
+    <ClInclude Include="WMVVideoInstance.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationContainer.cpp" />
+    <ClCompile Include="AnimationCurve.cpp" />
+    <ClCompile Include="AnimationInstance.cpp" />
+    <ClCompile Include="AnimationNode.cpp" />
+    <ClCompile Include="AnimationStack.cpp" />
+    <ClCompile Include="BloomManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CubeMapGenerator.cpp" />
+    <ClCompile Include="DirectX2D.cpp" />
+    <ClCompile Include="DirectXEngine.cpp" />
+    <ClCompile Include="DispatchHelper.cpp" />
+    <ClCompile Include="DynamicVertexBufferWrapper.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="EffectFactory.cpp" />
+    <ClCompile Include="OrthographicFrustum.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="EmitterData.cpp" />
+    <ClCompile Include="EmitterFactory.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Engine_Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Create</PrecompiledHeader>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">false</MultiProcessorCompilation>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="FaderHelper.cpp" />
+    <ClCompile Include="FBXFactory.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="FullScreenHelper.cpp" />
+    <ClCompile Include="GfxFactoryWrapper.cpp" />
+    <ClCompile Include="HDRManager.cpp" />
+    <ClCompile Include="HierarchyBone.cpp" />
+    <ClCompile Include="IndexBufferWrapper.cpp" />
+    <ClCompile Include="Instance.cpp" />
+    <ClCompile Include="LightBuffer.cpp" />
+    <ClCompile Include="LineRenderer.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelFactory.cpp" />
+    <ClCompile Include="MotionBlurManager.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="ParticleSystemData.cpp" />
+    <ClCompile Include="ParticleSystemFactory.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ResourceFontCollectionLoader.cpp" />
+    <ClCompile Include="ResourceFontFileEnumerator.cpp" />
+    <ClCompile Include="ResourceFontFileLoader.cpp" />
+    <ClCompile Include="ResourceFontFileStream.cpp" />
+    <ClCompile Include="SceneRenderData.cpp" />
+    <ClCompile Include="ShadowBuffer.cpp" />
+    <ClCompile Include="ShadowManager.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteFactory.cpp" />
+    <ClCompile Include="StreakEmitter.cpp" />
+    <ClCompile Include="StreakEmitterData.cpp" />
+    <ClCompile Include="StreakFactory.cpp" />
+    <ClCompile Include="Surface.cpp" />
+    <ClCompile Include="TerrainInstance.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureFactory.cpp" />
+    <ClCompile Include="TextureMerger.cpp" />
+    <ClCompile Include="TextureType.cpp" />
+    <ClCompile Include="TransformationNode.cpp" />
+    <ClCompile Include="TransformationNodeCurves.cpp" />
+    <ClCompile Include="TransformationNodeHierarchy.cpp" />
+    <ClCompile Include="TransformationNodeInstance.cpp" />
+    <ClCompile Include="VertexBufferWrapper.cpp" />
+    <ClCompile Include="VertexDataWrapper.cpp" />
+    <ClCompile Include="VertexIndexWrapper.cpp" />
+    <ClCompile Include="Video.cpp" />
+    <ClCompile Include="WindowsFunctions.cpp" />
+    <ClCompile Include="WMVVideoInstance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common Utilities\Common Utilities.vcxproj">
+      <Project>{50287e58-8bd0-437d-9803-77b3d5d0c8ac}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\FBXLoader\FBXLoader.vcxproj">
+      <Project>{4d08ddb8-10e7-4e90-8d90-f522282f451f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="DecalShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ParticleShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">5.0</ShaderModel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\CameraMarkerShader.fx" />
+    <FxCompile Include="ShaderEffects\ComputeShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">5.0</ShaderModel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\CutoutShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\DamageShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\FogOfWarShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\GUICutOff.fx" />
+    <FxCompile Include="ShaderEffects\GUIFaceShader.fx" />
+    <FxCompile Include="ShaderEffects\GUIShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\HealthBarCutOff.fx" />
+    <FxCompile Include="ShaderEffects\MinimapShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\NotificationMarkerShader.fx" />
+    <FxCompile Include="ShaderEffects\OneBitAlphaPBL.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\PBLLighting.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\PostProcessShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Default.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Health.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Line.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShaderFunctions.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShadowMapAlpha.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShadowMap.fx" />
+    <FxCompile Include="ShaderEffects\Shield.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SimpleAlphaShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SimpleShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">
+      </EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">
+      </EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">
+      </EntryPointName>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SkyBoxShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SpriteShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\TerrainShader.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\TerrainShadowMap.fx" />
+    <FxCompile Include="ShaderEffects\UnitsMarkerShader.fx" />
+    <FxCompile Include="ShaderEffects\VertexPosNormUVBiTan.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\VertexPosNormUVBiTanGUI.fx">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="StreakShader.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">5.0</ShaderModel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+    <FxCompile Include="TextureMerge.fx">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release NSIGHT|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='SingleThreaded Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Private Release|Win32'">5.0</ShaderModel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Workbed Release|Win32'">false</TreatWarningAsError>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

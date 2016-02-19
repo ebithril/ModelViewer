@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="SetupInfo.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsFunctions.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx11effect.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffers.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXEngine.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBufferWrapper.h">
+      <Filter>Model\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBufferWrapper.h">
+      <Filter>Model\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexDataWrapper.h">
+      <Filter>Model\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexIndexWrapper.h">
+      <Filter>Model\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelDataStruct.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureType.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRenderData.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GfxFactoryWrapper.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX2D.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="EmitterFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetData.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="FullScreenHelper.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="BloomManager.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DispatchHelper.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="LineRenderer.h">
+      <Filter>DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="HDRManager.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Precompiled.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="COMObjectPointer.h" />
+    <ClInclude Include="MotionBlurManager.h" />
+    <ClInclude Include="Streak.h">
+      <Filter>Streaks</Filter>
+    </ClInclude>
+    <ClInclude Include="StreakData.h">
+      <Filter>Streaks</Filter>
+    </ClInclude>
+    <ClInclude Include="StreakEmitter.h">
+      <Filter>Streaks</Filter>
+    </ClInclude>
+    <ClInclude Include="StreakEmitterData.h">
+      <Filter>Streaks</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMerger.h" />
+    <ClInclude Include="StreakFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMerger.h" />
+    <ClInclude Include="DynamicVertexBufferWrapper.h">
+      <Filter>Model\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Video.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="WMVVideoInstance.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="FaderHelper.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Model\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>Model\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="CurveAnimationFrame.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationNode.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationNodeCurves.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationNodeHierarchy.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationNodeInstance.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDefines.h">
+      <Filter>Model\Animation\Skinned</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationCurve.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyFrame.h">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainInstance.h" />
+    <ClInclude Include="Sprite.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationInstance.h">
+      <Filter>Model\Animation\Skinned\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationNode.h">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="HierarchyBone.h">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationStack.h">
+      <Filter>Model\Animation\Skinned\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationContainer.h">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleData.h">
+      <Filter>Particles\Data\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="EmitterData.h">
+      <Filter>Particles\Data\Emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemData.h">
+      <Filter>Particles\Data\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Particles\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Particles\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemFactory.h">
+      <Filter>Factories\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Particles\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="LightBuffer.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightShaderData.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>Particles\Emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowBuffer.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowManager.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthographicFrustum.h" />
+    <ClInclude Include="ShadowRenderData.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFactory.h">
+      <Filter>Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceFontFileEnumerator.h">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceFontFileLoader.h">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceFontFileStream.h">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceFontCollectionLoader.h">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClInclude>
+    <ClInclude Include="FontCommon.h">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineEvents.h" />
+    <ClInclude Include="CubeMapGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsFunctions.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXEngine.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBufferWrapper.cpp">
+      <Filter>Model\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBufferWrapper.cpp">
+      <Filter>Model\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexDataWrapper.cpp">
+      <Filter>Model\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexIndexWrapper.cpp">
+      <Filter>Model\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="FBXFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureType.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="GfxFactoryWrapper.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX2D.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="EmitterFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="FullScreenHelper.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="BloomManager.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DispatchHelper.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="LineRenderer.cpp">
+      <Filter>DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="HDRManager.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Precompiled.cpp">
+      <Filter>Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionBlurManager.cpp" />
+    <ClCompile Include="StreakEmitter.cpp">
+      <Filter>Streaks</Filter>
+    </ClCompile>
+    <ClCompile Include="StreakEmitterData.cpp">
+      <Filter>Streaks</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMerger.cpp" />
+    <ClCompile Include="StreakFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMerger.cpp" />
+    <ClCompile Include="DynamicVertexBufferWrapper.cpp">
+      <Filter>Model\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Video.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="WMVVideoInstance.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="FaderHelper.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRenderData.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Model\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>Model\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationNode.cpp">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationNodeCurves.cpp">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationNodeHierarchy.cpp">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationNodeInstance.cpp">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationCurve.cpp">
+      <Filter>Model\Animation\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainInstance.cpp" />
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationInstance.cpp">
+      <Filter>Model\Animation\Skinned\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationNode.cpp">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarchyBone.cpp">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationStack.cpp">
+      <Filter>Model\Animation\Skinned\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationContainer.cpp">
+      <Filter>Model\Animation\Skinned\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="EmitterData.cpp">
+      <Filter>Particles\Data\Emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Particles\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemData.cpp">
+      <Filter>Particles\Data\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemFactory.cpp">
+      <Filter>Factories\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LightBuffer.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Particles\Emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowBuffer.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowManager.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthographicFrustum.cpp" />
+    <ClCompile Include="SpriteFactory.cpp">
+      <Filter>Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceFontFileEnumerator.cpp">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceFontFileLoader.cpp">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceFontFileStream.cpp">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceFontCollectionLoader.cpp">
+      <Filter>DirectX\CustomFont</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeMapGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{c3fbcac5-9af8-45c1-88d4-42c75144b264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{5da4ba5a-0954-477c-9706-410bfa35dfbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{8dd38671-839a-4ffb-b76d-22908b7e4f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Shaders">
+      <UniqueIdentifier>{840c3e6e-1e4e-45bd-aba7-e080cc9e8bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factories">
+      <UniqueIdentifier>{0a9214b1-3bea-4d80-899d-6b851771e5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{31afee9b-aeba-4cda-a732-92e9ee0fa75e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{d6512198-7c69-4966-955b-5d96c7077b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Camera">
+      <UniqueIdentifier>{36d56bf0-270a-4d74-8c0d-38041519ecbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles">
+      <UniqueIdentifier>{d4f0dafa-f55f-4096-b364-df8dc9a04bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled">
+      <UniqueIdentifier>{4bf0150e-3d40-4c84-9010-b7e6406424e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Streaks">
+      <UniqueIdentifier>{76677e03-f0f8-48ff-999a-a0646d2a1f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Video">
+      <UniqueIdentifier>{ad9c0969-8cca-44f0-bdd3-d59a6b0b1482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{76013332-6c1b-46a8-a688-4ecdc53f4940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Buffers">
+      <UniqueIdentifier>{09651a90-d029-44e7-93d9-4ef0f8294095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Model">
+      <UniqueIdentifier>{b913edf0-b328-4323-bdce-c61fdf3046d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Instance">
+      <UniqueIdentifier>{c0787aff-4d49-412b-af1c-23ac88656488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Animation">
+      <UniqueIdentifier>{8b5cd05a-dd32-4e30-8318-383235c4c282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Animation\Hierarchy">
+      <UniqueIdentifier>{80613b97-3dcd-41cc-8117-a9c96a348cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Animation\Skinned">
+      <UniqueIdentifier>{da165fef-725b-4e59-9e7b-f0ec2e3cac83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Animation\Skinned\Instance">
+      <UniqueIdentifier>{4c950c0a-379b-4a4c-9b9e-b2850507955c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Animation\Skinned\Model">
+      <UniqueIdentifier>{4b88e5cb-74f8-4f0e-adf5-a9949e3bccff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Data">
+      <UniqueIdentifier>{9272b0fe-a0f5-4f53-a8b8-3ad49e4d49c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Data\Particle">
+      <UniqueIdentifier>{d0cd652b-7594-4758-bbb5-0cafaeec6951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Data\Emitter">
+      <UniqueIdentifier>{d1a42c7f-d5d9-4091-a8e6-edbcce4e2f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Data\System">
+      <UniqueIdentifier>{62bc1df3-21c6-40ec-abdf-4ac5c0f1d7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Emitter">
+      <UniqueIdentifier>{441b19da-e496-404c-8fe1-9bf42b564fbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\Particle">
+      <UniqueIdentifier>{68875494-4e7a-481b-a2e8-9cb45783450f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particles\System">
+      <UniqueIdentifier>{c598942b-2d5e-42a2-b471-628992217621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factories\ParticleSystem">
+      <UniqueIdentifier>{444169ac-3f39-4de4-b6b2-883c33d99718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\CustomFont">
+      <UniqueIdentifier>{7238ab63-0be8-4586-bf18-d7ea64255e94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ShaderEffects\SimpleShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\VertexPosNormUVBiTan.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Default.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Line.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SkyBoxShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ParticleShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ComputeShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\PostProcessShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\CutoutShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="StreakShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Health.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Health.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\Shield.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="TextureMerge.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SimpleAlphaShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\GUIShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\DamageShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\TerrainShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\SpriteShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\MinimapShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\FogOfWarShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\VertexPosNormUVBiTanGUI.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\OneBitAlphaPBL.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DecalShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\PBLLighting.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShaderFunctions.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\CameraMarkerShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\UnitsMarkerShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\NotificationMarkerShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShadowMapAlpha.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\HealthBarCutOff.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\ShadowMap.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\TerrainShadowMap.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\GUIFaceShader.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderEffects\GUICutOff.fx">
+      <Filter>Effects\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ID">
+      <UniqueIdentifier>{20d8ff9e-f6f1-4401-ba2c-e98f23fd78f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{7cc0ee09-c026-4156-8e92-a9cc4270bf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper">
+      <UniqueIdentifier>{a6ceea03-6f26-4a53-988c-9753335f2783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{17508033-59ee-45f5-a440-632303e8f4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper\XboxController">
+      <UniqueIdentifier>{700269fa-1fc2-49fb-b12f-7eaee378d6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arrays">
+      <UniqueIdentifier>{ae2e3867-36d1-4bb8-b0b2-dbfac47c9d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper\EventLogging">
+      <UniqueIdentifier>{bb04866f-4555-41a7-a7be-01515de3c1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{18dfbbe4-c0b0-4814-9564-369dcd60a670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{5f93286b-cdbf-41c1-afa6-d0b7a49efdf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper\EventLogging\Keyboard">
+      <UniqueIdentifier>{d0f62368-558e-4d09-babf-1d501ef87eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper\EventLogging\Mouse">
+      <UniqueIdentifier>{6d307bf5-0bdd-46ab-9a2e-c3a18ff8fe2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Wrapper\EventLogging\XboxController">
+      <UniqueIdentifier>{68ec0599-601c-4628-96ad-3a6bb0dc450a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{5e4bf6ec-6bc6-4db3-ab6b-b2d29bfd4563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Observer">
+      <UniqueIdentifier>{250c4750-df61-41d4-a88b-cc5c57ff485a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{4bc8c265-0260-4cf4-8a7a-448b6d504071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arrays\Map">
+      <UniqueIdentifier>{4bf2a3de-8ae9-4d6b-a8ff-068b2ee7b554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arrays\Map\Dictionary">
+      <UniqueIdentifier>{23ec35d9-2b17-4141-82b2-a42487abf2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLDebug">
+      <UniqueIdentifier>{21d29c01-c747-4901-8306-3a9ce3322e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Render">
+      <UniqueIdentifier>{8ba115de-7500-4750-ac2a-b9b80269cfc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Render\RenderCommands">
+      <UniqueIdentifier>{4b15e06f-8a2a-4c07-9a43-a111a7a3c358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events\Render\RenderBuffer">
+      <UniqueIdentifier>{657f717c-6294-45fa-81d9-aa7f9c0a0f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arrays\ObjectPool">
+      <UniqueIdentifier>{d01863f4-07ed-4953-a839-34e4e276bcef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trees">
+      <UniqueIdentifier>{9cdeef87-9d5a-4936-a21b-3e28a6b0503d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Binary">
+      <UniqueIdentifier>{ab0333e1-24f8-4a5f-ab57-75535c77e594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VtuneAPI">
+      <UniqueIdentifier>{bc8dc13d-5ad5-4fba-953e-fb77b7dd79da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled">
+      <UniqueIdentifier>{a2089f05-f6dc-4648-be35-c6c406fd9f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{f212b5b4-db7c-42de-8bff-1f97223cfef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Vector">
+      <UniqueIdentifier>{7c3b9715-c56a-4689-a4f8-93cdd4aee8e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Matrix">
+      <UniqueIdentifier>{a683a920-6931-46a3-91c1-2df208d22c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Planes">
+      <UniqueIdentifier>{c480556c-0b25-4e18-b20a-83da9e986000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Lines">
+      <UniqueIdentifier>{7978fbd7-4a30-4ea0-adca-117e005c14c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Smart Pointers">
+      <UniqueIdentifier>{2ce20902-6b28-4ce5-9582-84e4fb46a846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{2bdb9990-aedf-466d-a73d-d738fbabdcd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\Intersection">
+      <UniqueIdentifier>{170e3dbc-9b41-4c88-8756-42c4c3ce25a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision\Colliders">
+      <UniqueIdentifier>{12a41e58-1b61-4c82-b5f7-689cd9e7e7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileWatcher">
+      <UniqueIdentifier>{7b6067bb-e94c-4f3c-a0f8-b104dddaa2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{b394ba1d-7ae1-4d9a-a2b9-c0bbbd9cc080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateStack">
+      <UniqueIdentifier>{15e5e40b-ecd8-4081-b754-7fc956295ffc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IDFactory.h">
+      <Filter>ID</Filter>
+    </ClInclude>
+    <ClInclude Include="ID.h">
+      <Filter>ID</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWrapper.h">
+      <Filter>Input Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtilities.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerManager.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="XboxControllerState.h">
+      <Filter>Input Wrapper\XboxController</Filter>
+    </ClInclude>
+    <ClInclude Include="XboxController.h">
+      <Filter>Input Wrapper\XboxController</Filter>
+    </ClInclude>
+    <ClInclude Include="GrowingArray.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticArray.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorOnStack.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumKeys.h">
+      <Filter>Input Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_Assert.h">
+      <Filter>DLDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_Debug.h">
+      <Filter>DLDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="DL_StackWalker.h">
+      <Filter>DLDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="StackWalker.h">
+      <Filter>DLDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2decl.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3decl.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4decl.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Math\Planes</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneVolume.h">
+      <Filter>Math\Planes</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33decl.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix44.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix44decl.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Math\Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="LineVolume.h">
+      <Filter>Math\Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Work.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Worker.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalogueLog.h">
+      <Filter>Input Wrapper\EventLogging\XboxController</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleControllerLog.h">
+      <Filter>Input Wrapper\EventLogging\XboxController</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEventLog.h">
+      <Filter>Input Wrapper\EventLogging\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseAxisLog.h">
+      <Filter>Input Wrapper\EventLogging\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEventLog.h">
+      <Filter>Input Wrapper\EventLogging\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEvent.h">
+      <Filter>Input Wrapper\EventLogging\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvent.h">
+      <Filter>Input Wrapper\EventLogging\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLReader.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLWrapper.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLWriter.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Events\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverEvent.h">
+      <Filter>Events\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventBuffer.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventEnums.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="MurmurHash3.h">
+      <Filter>Arrays\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="CUString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>Arrays\Map\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryBucket.h">
+      <Filter>Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Arrays\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Intersection.h">
+      <Filter>Collision\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommandFont.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommandSprite.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsEnums.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureRect.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBuffer.h">
+      <Filter>Events\Render\RenderBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugLines.h">
+      <Filter>Events\Render\RenderBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObjectPool.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPoolData.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolPointer.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Greater.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Heap.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesser.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNumberGenerator.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryChunk.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryChunkLesser.h">
+      <Filter>Arrays\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryFunctions.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPrio.h">
+      <Filter>Events\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverPrio.h">
+      <Filter>Events\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommandInstance.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="CU_Time.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="ittnotify.h">
+      <Filter>VtuneAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="VTuneAPI.h">
+      <Filter>VtuneAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadEventData.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="DetachObserverData.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachObserverData.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceUsage.h" />
+    <ClInclude Include="EnumDictionary.h">
+      <Filter>Arrays\Map\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Common Utilities_Precompiled.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Lerp.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPointer.h">
+      <Filter>Smart Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Collision\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderCircle.h">
+      <Filter>Collision\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPointer.h">
+      <Filter>Smart Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionStructs.h">
+      <Filter>Collision\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="file_watcher.h">
+      <Filter>FileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryStackWalker.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryWrapper.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRenderCommands.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerButton.h">
+      <Filter>Input Wrapper\EventLogging\XboxController</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>StateStack</Filter>
+    </ClInclude>
+    <ClInclude Include="StateStack.h">
+      <Filter>StateStack</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommandLine.h">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="EventFunctions.h" />
+    <ClInclude Include="DataFile.h">
+      <Filter>FileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="CharInput.h">
+      <Filter>Input Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="RayStruct.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionStruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IDFactory.cpp">
+      <Filter>ID</Filter>
+    </ClCompile>
+    <ClCompile Include="InputWrapper.cpp">
+      <Filter>Input Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerManager.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="XboxController.cpp">
+      <Filter>Input Wrapper\XboxController</Filter>
+    </ClCompile>
+    <ClCompile Include="XboxControllerState.cpp">
+      <Filter>Input Wrapper\XboxController</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_Debug.cpp">
+      <Filter>DLDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="DL_StackWalker.cpp">
+      <Filter>DLDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="StackWalker.cpp">
+      <Filter>DLDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="ID.cpp">
+      <Filter>ID</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleControllerLog.cpp">
+      <Filter>Input Wrapper\EventLogging\XboxController</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalogueLog.cpp">
+      <Filter>Input Wrapper\EventLogging\XboxController</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEventLog.cpp">
+      <Filter>Input Wrapper\EventLogging\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEventLog.cpp">
+      <Filter>Input Wrapper\EventLogging\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Work.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLReader.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLWriter.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Events\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBuffer.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="MurmurHash3.cpp">
+      <Filter>Arrays\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Intersection.cpp">
+      <Filter>Collision\Intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCommandFont.cpp">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCommandSprite.cpp">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderBuffer.cpp">
+      <Filter>Events\Render\RenderBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugLines.cpp">
+      <Filter>Events\Render\RenderBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCommandInstance.cpp">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="CU_Time.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadEventData.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceUsage.cpp" />
+    <ClCompile Include="Common Utilities_Precompiled.cpp">
+      <Filter>Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Collision\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderCircle.cpp">
+      <Filter>Collision\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="file_watcher.cpp">
+      <Filter>FileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryStackWalker.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryWrapper.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRenderCommands.cpp">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>StateStack</Filter>
+    </ClCompile>
+    <ClCompile Include="StateStack.cpp">
+      <Filter>StateStack</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCommandLine.cpp">
+      <Filter>Events\Render\RenderCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="DataFile.cpp">
+      <Filter>FileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="CharInput.cpp">
+      <Filter>Input Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionStruct.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GrowingArray.natvis">
+      <Filter>Arrays</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
